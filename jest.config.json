@@ -1,0 +1,10 @@
+{
+    "rootDir": "./",
+    "verbose": true,
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+        "/node_modules/",
+        "/__mocks__/.*",
+        "/__tests__/.*"
+    ]   
+}
