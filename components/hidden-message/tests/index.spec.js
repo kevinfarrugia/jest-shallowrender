@@ -23,4 +23,19 @@ describe("<HiddenMessage />", () => {
       children: <div>Hello world</div>
     });
   });
+
+  it("should render the Fade component with the CSSTransition", () => {
+    const wrapper = shallow(
+      <Fade in={true}>
+        <div />
+      </Fade>
+    );
+
+    expect(wrapper.find("CSSTransition").props()).toMatchObject({
+      in: true,
+      timeout: 1000,
+      className: "fade",
+      children: <div />
+    });
+  });
 });
